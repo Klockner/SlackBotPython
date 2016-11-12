@@ -29,7 +29,7 @@ def greetings(user_id):
     for user in users:
         if user_id in user['id']:
             if user['is_admin']:
-                response = "Hello my lord " + find_user(user_id) + ", welcome sir :>"
+                response = "Hello master " + find_user(user_id) + ", welcome sir :>"
             else:
                 response = "Hello " + find_user(user_id) + ", welcome :)"
             return response
